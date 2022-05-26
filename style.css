@@ -4,6 +4,10 @@ footer {
   margin: 10px;
 }
 
+body {
+  background: url(images/background.png) no-repeat;
+}
+
 header {
   display: flex;
 }
