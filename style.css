@@ -17,7 +17,7 @@ header {
 .logo {
   font-size: 22px;
   color: #6070ff;
-  font-family: "Poppins", "sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   text-decoration: none;
 }
@@ -28,12 +28,13 @@ header {
 }
 
 .section-title h1 {
-  font-family: "Poppins", "sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
+  font-size: 40px;
 }
 
 .section-content p {
-  font-family: "Poppins", "sans-serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
