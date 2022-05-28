@@ -55,10 +55,14 @@ section.sectionOne {
 }
 
 .footer-title {
+  margin: 30px 0 20px 0;
+}
+
+.footer-title a {
   color: #7f8cff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  margin: 30px 0 20px 0;
+  text-decoration: none;
 }
 
 .footer-social_network-content {
@@ -72,6 +76,138 @@ section.sectionOne {
   margin: 0 8px;
 }
 
+.card,
+.about {
+  margin: 100px 0 0 0;
+}
+
 .card_picture {
   text-align: center;
+}
+
+.card_content {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  width: 295px;
+  margin: 0 auto;
+}
+
+.card_title {
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.card_title,
+.card_date,
+.card_info {
+  margin: 0 0 20px 0;
+}
+
+.card_lenguajes {
+  margin: 0 0 40px 0;
+  color: #6070ff;
+}
+
+.card_date ul,
+.card_lenguajes ul {
+  display: flex;
+}
+
+.card_date ul li,
+.card_lenguajes ul li {
+  margin: 0 10px 0 0;
+  list-style-type: none;
+}
+
+.card_date ul li {
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card_date ul li.card_date-active {
+  color: #344563;
+}
+
+.card_lenguajes span {
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.card_button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.card_button a {
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.about {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+.about_title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0 0 12px 0;
+}
+
+.about_info {
+  color: #344563;
+}
+
+.about_footer {
+  margin: 0 0 20px 0;
+}
+
+.detail {
+  margin: 80px 0 0 0;
+}
+
+.detail_section_title {
+  display: flex;
+  border-bottom: 1px solid #dfe1e6;
+  padding: 20px 0;
+}
+
+.detail_section_title div {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.detail_section_title .text {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.detail_section_title .icon {
+  background: url(images/arrow_right.png) no-repeat 0 -6px;
+  width: 40px;
+  position: absolute;
+  right: 5px;
+  height: 25px;
+}
+
+.detail_section_title.active {
+  border: none;
+}
+
+.detail_section_title.active .icon {
+  background: url(images/arrow_down.png) no-repeat 0 -6px;
+}
+
+.detail_lenguaje {
+  color: #253858;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 0 10px 10px 10px;
 }
