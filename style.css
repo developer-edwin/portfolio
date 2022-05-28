@@ -15,7 +15,6 @@ header {
 }
 
 .logo {
-  color: #6070ff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -24,6 +23,7 @@ header {
 
 .logo a {
   text-decoration: none;
+  color: #6070ff;
 }
 
 .menu {
@@ -31,9 +31,13 @@ header {
   right: 10px;
 }
 
+section {
+  height: 588px;
+}
+
 section.sectionOne {
   background: url(images/background.png) no-repeat;
-  background-size: 105%;
+  background-size: 100%;
 }
 
 .section-title h1 {
@@ -41,6 +45,7 @@ section.sectionOne {
   font-style: normal;
   font-size: 40px;
   color: #172b4d;
+  margin: 100px 0 0 0;
 }
 
 .section-content p {
@@ -49,10 +54,11 @@ section.sectionOne {
   color: #344563;
 }
 
-.footer-text {
+.footer-title {
   color: #7f8cff;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  margin: 30px 0 20px 0;
 }
 
 .footer-social_network-content {
@@ -64,4 +70,8 @@ section.sectionOne {
 
 .footer-social_network {
   margin: 0 8px;
+}
+
+.card_picture {
+  text-align: center;
 }
