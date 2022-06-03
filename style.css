@@ -171,6 +171,15 @@ section.sectionOne {
   background: #fff;
 }
 
+.about .card_button a {
+  color: #396df2;
+  text-decoration: none;
+}
+
+.about .card_button {
+  max-width: 165px;
+}
+
 .card .card_button:hover,
 .about .card_button a:hover {
   background: #6070ff;
@@ -182,15 +191,6 @@ section.sectionOne {
   background: #2230d2;
   border: 1px solid #2230d2;
   color: #fff;
-}
-
-.about .card_button a {
-  color: #396df2;
-  text-decoration: none;
-}
-
-.about .card_button {
-  max-width: 165px;
 }
 
 .about {
