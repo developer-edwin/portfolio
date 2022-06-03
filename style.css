@@ -5,12 +5,17 @@
   padding: 0;
 }
 
+body {
+  background: #e5e5e5;
+}
+
 header,
 section {
   padding: 10px;
 }
 
 header {
+  background: #fff;
   display: flex;
 }
 
@@ -32,12 +37,13 @@ header {
 }
 
 section {
-  height: 588px;
+  min-height: 588px;
 }
 
 section.sectionOne {
-  background: url(images/background.png) no-repeat;
+  background: url(images/background.png) #fff no-repeat;
   background-size: 100%;
+  border-radius: 0 0 0 50px;
 }
 
 .section-title h1 {
@@ -76,20 +82,27 @@ section.sectionOne {
   margin: 0 8px;
 }
 
-.card,
-.about {
-  margin: 100px 0 0 0;
+.card {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  margin: 100px 10px 0 10px;
 }
 
 .card_picture {
   text-align: center;
+  padding: 10px;
+}
+
+.card_picture img {
+  width: 100%;
 }
 
 .card_content {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  width: 295px;
   margin: 0 auto;
+  padding: 0 0 30px 0;
 }
 
 .card_title {
@@ -102,6 +115,10 @@ section.sectionOne {
 .card_date,
 .card_info {
   margin: 0 0 20px 0;
+}
+
+.card_info p {
+  width: 100%;
 }
 
 .card_lenguajes {
@@ -139,7 +156,18 @@ section.sectionOne {
 .card_button {
   border: 1px solid #6070ff;
   border-radius: 8px;
+  color: #6070ff;
   padding: 12px;
+}
+
+.card_button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.card_button:active {
+  background: #2230d2;
+  color: #fff;
 }
 
 .card_button a {
@@ -150,8 +178,11 @@ section.sectionOne {
 }
 
 .about {
+  background: #fff;
+  border-radius: 0 50px 0 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  margin: 100px 0 0 0;
 }
 
 .about_title {
