@@ -7,13 +7,21 @@
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   background: #e5e5e5;
 }
 
 header,
 section {
-  padding: 10px;
+  padding: 24px;
 }
 
 header {
@@ -29,7 +37,6 @@ header {
 }
 
 .logo a {
-  text-decoration: none;
   color: #6070ff;
 }
 
@@ -71,12 +78,10 @@ section.sectionOne {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  text-decoration: none;
 }
 
 .footer-social_network-content {
   display: flex;
-  list-style-type: none;
   padding: 0;
   align-items: end;
 }
@@ -89,7 +94,7 @@ section.sectionOne {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin: 100px 10px 0 10px;
+  margin: 100px 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -139,7 +144,6 @@ section.sectionOne {
 .card_date ul li,
 .card_lenguajes ul li {
   margin: 0 10px 0 0;
-  list-style-type: none;
 }
 
 .card_date ul li {
@@ -173,7 +177,6 @@ section.sectionOne {
 
 .about .card_button a {
   color: #396df2;
-  text-decoration: none;
 }
 
 .about .card_button {
@@ -201,6 +204,7 @@ section.sectionOne {
   margin: 100px 0 0 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .about_title {
@@ -268,3 +272,91 @@ section.sectionOne {
 .detail_lenguaje p {
   padding: 13px 0 0 13px;
 }
+
+/* Form */
+
+.form-section {
+  background: #fff;
+  padding: 0;
+}
+
+.form-section form {
+  background: url(images/background-form.png) no-repeat #6070ff;
+  background-position-x: right;
+  background-position-y: 20px;
+  background-size: 60%;
+  border-radius: 60px 0 0 0;
+  min-height: 588px;
+  padding: 10px;
+}
+
+.form-section form .form-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 90px 0 20px 0;
+  text-align: center;
+}
+
+.form-section form .form-info {
+  color: #ebebff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 5% 50px 5%;
+}
+
+.form-section form ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-section form ul li {
+  margin: 10px 0;
+}
+
+.form-section form input,
+.form-section form textarea,
+.form-section form button {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  width: 87%;
+}
+
+.form-section form input::placeholder,
+.form-section form textarea::placeholder {
+  color: #b3bac5;
+}
+
+.form-section form textarea {
+  height: 125px;
+}
+
+.form-section form button {
+  width: unset;
+  color: #6070ff;
+  margin-bottom: 45px;
+}
+
+.form-section form button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.form-section form button:active {
+  background: #2230d2;
+  border: 1px solid #2230d2;
+  color: #fff;
+}
+
+/* end Form */
