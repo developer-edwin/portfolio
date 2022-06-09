@@ -359,4 +359,14 @@ section.sectionOne {
   color: #fff;
 }
 
+#black_line {
+  background: #0d151e;
+  border-radius: 10px;
+  position: relative;
+  width: 134px;
+  height: 5px;
+  bottom: 0;
+  left: calc(50% - 134px / 2 - 0.5px);
+}
+
 /* end Form */
