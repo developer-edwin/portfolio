@@ -20,7 +20,14 @@
         <a href="/">Azkur</a>
       </div>
       <nav>
-        <div class="menu"><img src="images/menu.png" alt="" /></div>
+        <div class="menu">
+          <img src="images/menu.png" alt="" />
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section class="sectionOne">
@@ -197,40 +204,42 @@
       </div>
     </section>
     <section class="about">
-      <div>
-        <h2 class="about_title">About<br />Myself</h2>
+      <div id="about-left_column">
+        <div>
+          <h2 class="about_title">About<br />Myself</h2>
+        </div>
+        <div>
+          <p class="about_info">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+        </div>
+        <div class="about_footer">
+          <div class="footer-title"><a href="#">LET'S CONNECT</a></div>
+          <ul class="footer-social_network-content">
+            <li class="footer-social_network">
+              <a href="#"><img src="images/github.svg" alt="" /></a>
+            </li>
+            <li class="footer-social_network">
+              <a href="#"><img src="images/linkedin.svg" alt="" /></a>
+            </li>
+            <li class="footer-social_network">
+              <a href="#"><img src="images/hand.svg" alt="" /></a>
+            </li>
+            <li class="footer-social_network">
+              <a href="#"><img src="images/twitter.svg" alt="" /></a>
+            </li>
+            <li class="footer-social_network">
+              <a href="#"><img src="images/m.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <span class="card_button">
+          <a href="#">Get my resume</a>
+        </span>
       </div>
-      <div>
-        <p class="about_info">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-      </div>
-      <div class="about_footer">
-        <div class="footer-title"><a href="#">LET'S CONNECT</a></div>
-        <ul class="footer-social_network-content">
-          <li class="footer-social_network">
-            <a href="#"><img src="images/github.svg" alt="" /></a>
-          </li>
-          <li class="footer-social_network">
-            <a href="#"><img src="images/linkedin.svg" alt="" /></a>
-          </li>
-          <li class="footer-social_network">
-            <a href="#"><img src="images/hand.svg" alt="" /></a>
-          </li>
-          <li class="footer-social_network">
-            <a href="#"><img src="images/twitter.svg" alt="" /></a>
-          </li>
-          <li class="footer-social_network">
-            <a href="#"><img src="images/m.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-      <span class="card_button">
-        <a href="#">Get my resume</a>
-      </span>
       <ul class="detail">
         <li class="detail_section">
           <div class="detail_section_title active">
@@ -315,7 +324,7 @@
               ></textarea>
             </label>
           </li>
-          <li>
+          <li id="form-button">
             <button type="submit">Get it Touch</button>
           </li>
         </ul>
