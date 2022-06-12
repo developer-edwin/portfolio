@@ -352,6 +352,10 @@ section.sectionOne {
   height: 125px;
 }
 
+#form-button {
+  text-align: center;
+}
+
 .form-section form button {
   width: unset;
   color: #6070ff;
