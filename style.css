@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
 
 * {
@@ -29,18 +30,18 @@ header {
   display: flex;
 }
 
-.logo {
+#logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
 
-.logo a {
-  color: #6070ff;
+#logo a {
+  color: #4c5ace;
 }
 
-.menu {
+#menu {
   position: absolute;
   right: 10px;
 }
@@ -50,9 +51,64 @@ header {
   display: flex;
 }
 
-nav .menu ul {
+nav #menu ul,
+nav #closeMenu {
   display: none;
 }
+
+/* Displayed menu */
+
+nav.displayMenu #hamburgerMenu {
+  display: none;
+}
+
+nav.displayMenu #menu {
+  background: rgba(0, 0, 256, 0.5);
+  height: 100vh;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.displayMenu #menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+nav.displayMenu #menu ul li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+nav.displayMenu #closeMenu {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+nav.displayMenu #closeMenu img {
+  display: block;
+  margin: 30px 10px 0 auto;
+}
+
+/* End Displayed menu */
+
+/* General blur and scroll block */
+
+#logo.blur,
+section.blur {
+  filter: blur(10px);
+}
+
+body.noScroll {
+  overflow-y: hidden;
+}
+
+/* General blur and scroll block */
 
 section {
   min-height: 588px;
@@ -83,7 +139,7 @@ section.sectionOne {
 }
 
 .footer-title a {
-  color: #7f8cff;
+  color: #606bc3;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -147,7 +203,7 @@ section.sectionOne {
 
 .card_lenguajes {
   margin: 0 0 40px 0;
-  color: #6070ff;
+  color: #4c5ace;
 }
 
 .card_date ul li,
@@ -156,7 +212,7 @@ section.sectionOne {
 }
 
 .card_date ul li {
-  color: #7a869a;
+  color: #677283;
   font-weight: 600;
   font-size: 13px;
 }
@@ -173,9 +229,9 @@ section.sectionOne {
 
 .card .card_button,
 .about .card_button a {
-  border: 1px solid #6070ff;
+  border: 1px solid #4c5ace;
   border-radius: 8px;
-  color: #6070ff;
+  color: #4c5ace;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -194,7 +250,7 @@ section.sectionOne {
 
 .card .card_button:hover,
 .about .card_button a:hover {
-  background: #6070ff;
+  background: #4c5ace;
   color: #fff;
 }
 
@@ -290,7 +346,7 @@ section.sectionOne {
 }
 
 .form-section form {
-  background: url(images/background-form.png) no-repeat #6070ff;
+  background: url(images/background-form.png) no-repeat #4c5ace;
   background-position-x: right;
   background-position-y: 20px;
   background-size: 60%;
@@ -358,12 +414,12 @@ section.sectionOne {
 
 .form-section form button {
   width: unset;
-  color: #6070ff;
+  color: #4c5ace;
   margin-bottom: 45px;
 }
 
 .form-section form button:hover {
-  background: #6070ff;
+  background: #4c5ace;
   color: #fff;
 }
 
@@ -386,11 +442,11 @@ section.sectionOne {
 /* end Form */
 
 @media (min-width: 768px) {
-  .logo {
+  #logo {
     padding-left: 10%;
   }
 
-  nav .menu {
+  nav #menu {
     right: 10%;
   }
 
@@ -400,7 +456,7 @@ section.sectionOne {
     margin: 12px;
   }
 
-  nav .menu img {
+  nav #menu img {
     display: none;
   }
 
@@ -408,7 +464,7 @@ section.sectionOne {
     display: flex;
   }
 
-  nav .menu ul {
+  nav #menu ul {
     color: #344563;
     display: flex;
     font-weight: 500;
@@ -568,7 +624,7 @@ section.sectionOne {
   }
 
   .form-section form {
-    background: url(images/background_form-desktop.svg) no-repeat #6070ff;
+    background: url(images/background_form-desktop.svg) no-repeat #4c5ace;
     background-position: center;
     background-size: 90%;
   }

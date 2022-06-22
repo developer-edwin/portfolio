@@ -16,16 +16,33 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="/">Azkur</a>
+      <div id="logo">
+        <a title="Home" href="/">Azkur</a>
       </div>
       <nav>
-        <div class="menu">
-          <img src="images/menu.png" alt="" />
+        <div id="menu">
+          <img id="hamburgerMenu" src="images/menu.png" alt="Menu" />
+          <div id="closeMenu" class="displayMenu">
+            <img
+              src="images/equis.svg"
+              alt="Close Menu"
+              id="hamburgerMenuClose"
+            />
+          </div>
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a class="navLink" title="Portfolio" href="#cards-section"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="navLink" title="About" href="#about">About</a>
+            </li>
+            <li>
+              <a class="navLink" title="Contact" href="#form-section"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -48,23 +65,33 @@
       </div>
       <div>
         <div class="footer-title">
-          <h3><a href="#">LET'S CONNECT</a></h3>
+          <h3><a title="LET'S CONNECT" href="#">LET'S CONNECT</a></h3>
         </div>
         <ul class="footer-social_network-content">
           <li class="footer-social_network">
-            <a href="#"><img src="images/twitter.svg" alt="" /></a>
+            <a title="Twitter" href="#"
+              ><img src="images/twitter.svg" alt="Twitter"
+            /></a>
           </li>
           <li class="footer-social_network">
-            <a href="#"><img src="images/linkedin.svg" alt="" /></a>
+            <a title="LinkedIn" href="#"
+              ><img src="images/linkedin.svg" alt="LinkedIn"
+            /></a>
           </li>
           <li class="footer-social_network">
-            <a href="#"><img src="images/m.svg" alt="" /></a>
+            <a title="Medium" href="#"
+              ><img src="images/m.svg" alt="Medium"
+            /></a>
           </li>
           <li class="footer-social_network">
-            <a href="#"><img src="images/github.svg" alt="" /></a>
+            <a title="GitHub" href="#"
+              ><img src="images/github.svg" alt="GitHub"
+            /></a>
           </li>
           <li class="footer-social_network">
-            <a href="#"><img src="images/hand.svg" alt="" /></a>
+            <a title="Angel List" href="#"
+              ><img src="images/hand.svg" alt="Angel List"
+            /></a>
           </li>
         </ul>
       </div>
@@ -72,7 +99,7 @@
     <section id="cards-section">
       <div class="card">
         <div class="card_picture">
-          <img src="images/snapshot1.png" alt="" />
+          <img src="images/snapshot1.png" alt="Snapshot 1" />
         </div>
         <div class="card_content">
           <div class="card_title">
@@ -81,9 +108,9 @@
           <div class="card_date">
             <ul>
               <li class="card_date-active">CANOPY</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>Back End Dev</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>2015</li>
             </ul>
           </div>
@@ -105,7 +132,7 @@
       </div>
       <div class="card">
         <div class="card_picture">
-          <img src="images/snapshot2.png" alt="" />
+          <img src="images/snapshot2.png" alt="Snapshot 2" />
         </div>
         <div class="card_content">
           <div class="card_title">
@@ -114,9 +141,9 @@
           <div class="card_date">
             <ul>
               <li class="card_date-active">CANOPY</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>Back End Dev</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>2015</li>
             </ul>
           </div>
@@ -138,7 +165,7 @@
       </div>
       <div class="card">
         <div class="card_picture">
-          <img src="images/snapshot3.png" alt="" />
+          <img src="images/snapshot3.png" alt="Snapshot 3" />
         </div>
         <div class="card_content">
           <div class="card_title">
@@ -147,9 +174,9 @@
           <div class="card_date">
             <ul>
               <li class="card_date-active">CANOPY</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>Back End Dev</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>2015</li>
             </ul>
           </div>
@@ -171,7 +198,7 @@
       </div>
       <div class="card">
         <div class="card_picture">
-          <img src="images/snapshot4.png" alt="" />
+          <img src="images/snapshot4.png" alt="Snapshot 4" />
         </div>
         <div class="card_content">
           <div class="card_title">
@@ -180,9 +207,9 @@
           <div class="card_date">
             <ul>
               <li class="card_date-active">CANOPY</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>Back End Dev</li>
-              <li><img src="images/bullet.png" alt="" /></li>
+              <li><img src="images/bullet.png" alt="bullet" /></li>
               <li>2015</li>
             </ul>
           </div>
@@ -217,27 +244,37 @@
           </p>
         </div>
         <div class="about_footer">
-          <div class="footer-title"><a href="#">LET'S CONNECT</a></div>
+          <div class="footer-title"><a title="" href="#">LET'S CONNECT</a></div>
           <ul class="footer-social_network-content">
             <li class="footer-social_network">
-              <a href="#"><img src="images/github.svg" alt="" /></a>
+              <a title="Twitter" href="#"
+                ><img src="images/twitter.svg" alt="Twitter"
+              /></a>
             </li>
             <li class="footer-social_network">
-              <a href="#"><img src="images/linkedin.svg" alt="" /></a>
+              <a title="LinkedIn" href="#"
+                ><img src="images/linkedin.svg" alt="LinkedIn"
+              /></a>
             </li>
             <li class="footer-social_network">
-              <a href="#"><img src="images/hand.svg" alt="" /></a>
+              <a title="Medium" href="#"
+                ><img src="images/m.svg" alt="Medium"
+              /></a>
             </li>
             <li class="footer-social_network">
-              <a href="#"><img src="images/twitter.svg" alt="" /></a>
+              <a title="GitHub" href="#"
+                ><img src="images/github.svg" alt="GitHub"
+              /></a>
             </li>
             <li class="footer-social_network">
-              <a href="#"><img src="images/m.svg" alt="" /></a>
+              <a title="Angel List" href="#"
+                ><img src="images/hand.svg" alt="Angel List"
+              /></a>
             </li>
           </ul>
         </div>
         <span class="card_button">
-          <a href="#">Get my resume</a>
+          <a title="" href="#">Get my resume</a>
         </span>
       </div>
       <ul class="detail">
@@ -249,19 +286,19 @@
           <ul>
             <li>
               <div class="detail_lenguaje">
-                <img src="images/js.png" alt="" />
+                <img src="images/js.png" alt="JS" />
                 <p>JavaScript</p>
               </div>
             </li>
             <li>
               <div class="detail_lenguaje">
-                <img src="images/html.png" alt="" />
+                <img src="images/html.png" alt="HTML" />
                 <p>HTML</p>
               </div>
             </li>
             <li>
               <div class="detail_lenguaje">
-                <img src="images/css.png" alt="" />
+                <img src="images/css.png" alt="CSS" />
                 <p>CSS</p>
               </div>
             </li>
@@ -331,5 +368,6 @@
         <div id="black_line"></div>
       </form>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
