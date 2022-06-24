@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-globals */
 function blurBody() {
   document.querySelector('#logo').classList.toggle('blur');
