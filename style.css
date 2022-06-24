@@ -1,10 +1,10 @@
 /* stylelint-disable no-descending-specificity */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
 
@@ -31,7 +31,7 @@ header {
 }
 
 #logo {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -49,6 +49,7 @@ header {
 .card_date ul,
 .card_lenguajes ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav #menu ul,
@@ -121,7 +122,7 @@ section.sectionOne {
 }
 
 .section-title h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 40px;
   color: #172b4d;
@@ -129,7 +130,7 @@ section.sectionOne {
 }
 
 .section-content p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: #344563;
 }
@@ -140,7 +141,7 @@ section.sectionOne {
 
 .footer-title a {
   color: #606bc3;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -179,15 +180,13 @@ section.sectionOne {
 }
 
 .card_content {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   margin: 0 auto;
   padding: 0 10px 30px 10px;
 }
 
-.card_title {
+.card_title h1 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   color: #172b4d;
 }
 
@@ -202,13 +201,14 @@ section.sectionOne {
 }
 
 .card_lenguajes {
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   color: #4c5ace;
 }
 
 .card_date ul li,
 .card_lenguajes ul li {
   margin: 0 10px 0 0;
+  padding: 0 0 12px 0px;
 }
 
 .card_date ul li {
@@ -232,7 +232,7 @@ section.sectionOne {
   border: 1px solid #4c5ace;
   border-radius: 8px;
   color: #4c5ace;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -264,7 +264,7 @@ section.sectionOne {
 .about {
   background: #fff;
   border-radius: 0 50px 0 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   margin: 100px 0 0 0;
   display: flex;
@@ -274,7 +274,7 @@ section.sectionOne {
 
 .about_title {
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -441,6 +441,42 @@ section.sectionOne {
 
 /* end Form */
 
+/* Pop-Up */
+
+#popUpMain {
+  display: block;
+  height: 100%;
+  left: 1.5vw;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 97%;
+}
+
+#popUpMain .card {
+  margin: 25px;
+}
+
+#popUpMain i#closePopUp {
+  position: absolute;
+  right: 25px;
+  color: #67798e;
+  mix-blend-mode: multiply;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 0 0 0;
+}
+
+.pop-up-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#popUpMain .pr-languages {
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
 @media (min-width: 768px) {
   #logo {
     padding-left: 10%;
@@ -552,7 +588,7 @@ section.sectionOne {
     margin-left: 50px;
   }
 
-  .card_title {
+  .card_title h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -651,4 +687,44 @@ section.sectionOne {
   #black_line {
     display: none;
   }
+
+  /* PopUp */
+
+  #popUpMain {
+    left: 3vw;
+    width: 94%;
+  }
+
+  #popUpMain .card .card_content {
+    width: unset;
+  }
+
+  #popUpMain .card_title,
+  #popUpMain .card_date,
+  #popUpMain .card_info,
+  #popUpMain .card_lenguajes,
+  #popUpMain .card_button {
+    margin-left: 0;
+  }
+
+  #popUpMain .card .card_content .card_picture {
+    float: unset;
+    width: 100%;
+    padding-bottom: 2vw;
+  }
+
+  #popUpMain .card .card_content .card_picture img {
+    max-width: 100vh;
+  }
+
+  #popUpMain .card .card_content .card_info {
+    width: 50%;
+    float: left;
+  }
+
+  /* End PopUp */
+}
+
+.hide {
+  display: none !important;
 }
