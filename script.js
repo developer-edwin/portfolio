@@ -155,9 +155,7 @@ function showPopUp(cardNumber) {
         <li>2015</li>
       </ul>
     </div>
-    <div class="card_picture">
-      <img src="${projectsData[cardNumber].featured_image}" alt="Snapshot" />
-    </div>
+    <div class="card_picture" style="background: url(${projectsData[cardNumber].featured_image}) no-repeat center; background-size: calc(87vw);"></div>
     <div class="card_info">
       <p>
         ${paragraphDescription}
