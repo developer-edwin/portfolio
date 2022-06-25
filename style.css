@@ -205,11 +205,6 @@ section.sectionOne {
   color: #4c5ace;
 }
 
-.card_date ul li {
-  margin: 0 10px 0 0;
-  padding: 0 0 12px 0;
-}
-
 .card_lenguajes ul li {
   margin: 0 10px 0 0;
   padding: 0 0 25px 0;
@@ -219,6 +214,8 @@ section.sectionOne {
   color: #677283;
   font-weight: 600;
   font-size: 13px;
+  margin: 0 10px 0 0;
+  padding: 0 0 12px 0;
 }
 
 .card_date ul li.card_date-active {
