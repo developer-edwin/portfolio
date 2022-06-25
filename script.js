@@ -192,3 +192,44 @@ function showPopUp(cardNumber) {
     blurBody();
   });
 }
+
+/* Form Validation */
+function displayAlert() {
+  const box = document.getElementById('alert');
+  const btn = document.querySelector('#test');
+
+  if (box.classList.contains('hide')) {
+    box.classList.remove('hide');
+    setTimeout(() => {
+      box.classList.remove('visuallyhidden');
+    }, 20);
+  } else {
+    box.classList.add('visuallyhidden');
+    box.addEventListener(
+      'transitionend',
+      (e) => {
+        box.classList.add('hide');
+      },
+      {
+        capture: false,
+        once: true,
+        passive: false,
+      },
+    );
+  }
+}
+
+document
+  .getElementById('contactForm')
+  .addEventListener('click', (event) => {
+    if (/[A-Z]/.test(document.getElementById('email').value)) {
+      event.preventDefault();
+      document.querySelector('#alert').innerHTML = '<li>Email must be on lowercase.</li>';
+      displayAlert();
+      document.querySelector('#email').classList.toggle('redAlert');
+      setTimeout(() => {
+        displayAlert();
+        document.querySelector('#email').classList.toggle('redAlert');
+      }, 3000);
+    }
+  });

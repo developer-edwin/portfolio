@@ -413,6 +413,17 @@ section.sectionOne {
   text-align: center;
 }
 
+.alert {
+  display: block;
+  border-radius: 7px;
+  margin: 0 0 20px 0;
+  padding: 15px 20px;
+  text-align: left;
+  transition: all 1s linear;
+  width: 447px;
+  position: absolute;
+}
+
 .form-section form button {
   width: unset;
   color: #4c5ace;
@@ -730,6 +741,16 @@ section.sectionOne {
   }
 
   /* End PopUp */
+}
+
+.redAlert {
+  color: #721c24 !important;
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+}
+
+.visuallyhidden {
+  opacity: 0;
 }
 
 .hide {
