@@ -221,7 +221,7 @@ function displayAlert() {
 
 document
   .getElementById('contactForm')
-  .addEventListener('click', (event) => {
+  .addEventListener('submit', (event) => {
     if (/[A-Z]/.test(document.getElementById('email').value)) {
       event.preventDefault();
       document.querySelector('#alert').innerHTML = '<li>Email must be on lowercase.</li>';
@@ -233,3 +233,46 @@ document
       }, 3000);
     }
   });
+
+/* Local storage */
+
+function getFormData() {
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+
+  // // Put the object into storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+
+  // // Retrieve the object from storage
+  const retrieveFormData = localStorage.getItem('formData');
+  console.log(JSON.parse(retrieveFormData));
+}
+
+document.getElementById('name').addEventListener('change', () => {
+  getFormData();
+});
+document.getElementById('email').addEventListener('change', () => {
+  getFormData();
+});
+document.getElementById('message').addEventListener('change', () => {
+  getFormData();
+});
+
+function loadLocalStorageData() {
+  if (localStorage.getItem('formData') !== null) {
+    // console.log('Content exists');
+    const retrieveFormData = localStorage.getItem('formData');
+    const retrieveJsonData = JSON.parse(retrieveFormData);
+    document.getElementById('name').value = retrieveJsonData.name;
+    document.getElementById('email').value = retrieveJsonData.email;
+    document.getElementById('message').value = retrieveJsonData.message;
+  }
+}
+
+window.onload = () => {
+  loadLocalStorageData();
+  // console.log('El dom esta cargado');
+};
